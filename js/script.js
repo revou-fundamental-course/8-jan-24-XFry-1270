@@ -20,9 +20,11 @@ document.querySelector('.kl').addEventListener("click",function(){
     if(luas.value == ""){
         alert("Harap isi Nilai sisi !")
         document.querySelector(".ls").innerHTML="Hasil";
+    }else{
+        var show = luas.value*luas.value;
+        document.querySelector(".ls").innerHTML=show;
     }
-    var show = luas.value*luas.value;
-    document.querySelector(".ls").innerHTML=show;
+   
 })
 
 document.querySelector(".rl").addEventListener('click',function(){
